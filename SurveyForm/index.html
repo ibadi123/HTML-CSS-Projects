@@ -1,0 +1,206 @@
+<html>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <div id="outer">
+      <p id="description">Provide your details below</p>
+
+      <form id="survey-form">
+        <div class="rowTab">
+          <div class="labels">
+            <label id="name-label" for="name">* Name: </label>
+          </div>
+          <div class="rightTab">
+            <input
+              autofocus
+              type="text"
+              name="name"
+              id="name"
+              class="input-field"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels">
+            <label id="email-label" for="email">* Email: </label>
+          </div>
+          <div class="rightTab">
+            <input
+              autofocus
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+              type="email"
+              name="email"
+              id="email"
+              class="input-field"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels">
+            <label id="number-label" for="number">* Age: </label>
+          </div>
+          <div class="rightTab">
+            <input
+              autofocus
+              type="number"
+              name="number"
+              min="10"
+              max="50"
+              id="number"
+              class="input-field"
+              placeholder="Enter your age"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels"><label for="dropwdown"> Your job: </label></div>
+          <div class="rightTab">
+            <select id="dropdown" name="dropdown" class="input-field">
+              <option disabled value>Select an option </option>
+              <option value="Developer"> Developer </option>
+              <option value="Manager"> Manager </option>
+              <option value="Reviewer"> Reviewer </option>
+              <option value="Assistant"> Assistant </option>
+              <option value="Director"> Director </option>
+            </select>
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels">
+            <label for="Satisfaction">* Job satisfaction?</label>
+          </div>
+          <div class="rightTab">
+            <ul style="list-style: none">
+              <li class="radio">
+                <label
+                  ><input
+                    name="radio-buttons"
+                    value="1"
+                    type="radio"
+                    class="Satisfaction"
+                  />Best</label
+                >
+              </li>
+              <li class="radio">
+                <label
+                  ><input
+                    name="radio-buttons"
+                    value="2"
+                    type="radio"
+                    class="Satisfaction"
+                  />Average</label
+                >
+              </li>
+              <li class="radio">
+                <label
+                  ><input
+                    name="radio-buttons"
+                    value="4"
+                    type="radio"
+                    class="Satisfaction"
+                  />Worst</label
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels"><label for="plans">Future plans:</label></div>
+          <div class="rightTab">
+            <ul id="preferences" style="list-style: none">
+              <li class="radio">
+                <label
+                  ><input
+                    name="plans"
+                    value="1"
+                    type="checkbox"
+                    class="Satisfaction"
+                  />Data Science</label
+                >
+              </li>
+              <li class="radio">
+                <label
+                  ><input
+                    name="plans"
+                    value="2"
+                    type="checkbox"
+                    class="Satisfaction"
+                  />Web Devlopment</label
+                >
+              </li>
+              <li class="radio">
+                <label
+                  ><input
+                    name="plans"
+                    value="3"
+                    type="checkbox"
+                    class="Satisfaction"
+                  />Quantum Computing</label
+                >
+              </li>
+              <li class="radio">
+                <label
+                  ><input
+                    name="plans"
+                    value="4"
+                    type="checkbox"
+                    class="Satisfaction"
+                  />Networking</label
+                >
+              </li>
+              <li class="radio">
+                <label
+                  ><input
+                    name="plans"
+                    value="5"
+                    type="checkbox"
+                    class="Satisfaction"
+                  />Info Sec</label
+                >
+              </li>
+              <li class="radio">
+                <label
+                  ><input
+                    name="plans"
+                    value="6"
+                    type="checkbox"
+                    class="Satisfaction"
+                  />Data Analysis</label
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels"><label for="comments"> Comments </label></div>
+          <div class="rightTab">
+            <textarea
+              id="comments"
+              class="input-field"
+              style="height:100px; border-radius: 7px;"
+              name="comments"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+        </div>
+
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
