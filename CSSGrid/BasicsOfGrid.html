@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <style>
+    .grid div {
+      background: #eee;
+      padding: 1em;
+    }
+
+    .grid div:nth-child(odd) {
+      background: #ddd;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 70% 30%; /* Given cols like 2 will only add 2 in one line no matter which divs are give */
+      /*
+  grid-column-gap: 1em; 
+  grid-row-gap: 1em;
+  */
+      grid-gap: 1em;
+    }
+  </style>
+  <body>
+    <div class="grid">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit facere
+        provident commodi fugit quam accusantium quisquam hic, aspernatur sit
+        ipsa unde esse fuga explicabo inventore suscipit cupiditate tenetur
+        omnis! Soluta dicta minima molestias, impedit atque delectus dolorum
+        accusantium in aliquam magnam excepturi iusto perspiciatis quo maiores
+        eveniet voluptate modi aperiam unde eos iure corrupti nesciunt sequi.
+        Autem assumenda sint nihil consectetur! Nam iste mollitia similique
+        corporis dignissimos eius tempore incidunt est optio, laboriosam
+        voluptatibus asperiores, porro assumenda culpa dolore. Possimus?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fuga
+        labore aperiam error maiores ab voluptatem cumque ratione voluptate
+        numquam quis, dolorem, nobis, consequatur laudantium distinctio animi
+        delectus voluptas quae!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit facere
+        provident commodi fugit quam accusantium quisquam hic, aspernatur sit
+        ipsa unde esse fuga explicabo inventore suscipit cupiditate tenetur
+        omnis! Soluta dicta minima molestias, impedit atque delectus dolorum
+        accusantium in aliquam magnam excepturi iusto perspiciatis quo maiores
+        eveniet voluptate modi aperiam unde eos iure corrupti nesciunt sequi.
+        Autem assumenda sint nihil consectetur! Nam iste mollitia similique
+        corporis dignissimos eius tempore incidunt est optio, laboriosam
+        voluptatibus asperiores, porro assumenda culpa dolore. Possimus?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fuga
+        labore aperiam error maiores ab voluptatem cumque ratione voluptate
+        numquam quis, dolorem, nobis, consequatur laudantium distinctio animi
+        delectus voluptas quae!
+      </div>
+    </div>
+  </body>
+</html>

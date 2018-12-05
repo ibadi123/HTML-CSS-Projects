@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IntermediateGrid</title>
+  </head>
+  <style>
+    .grid div {
+      background: #eee;
+      padding: 1em;
+    }
+
+    .grid div:nth-child(odd) {
+      background: #ddd;
+    }
+
+    .grid {
+      display: grid;
+      /* grid-template-columns: 1fr 1fr 1fr; */
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1em;
+      /* grid-auto-rows: 100px; */ /* Restricts to 100px no matter what the content is */
+      grid-auto-rows: minmax(
+        100px,
+        auto
+      ); /* Keeps 100px for every content and auto that doesnt fit in along with the other col items*/
+    }
+  </style>
+  <body>
+    <div class="grid">
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+        assumenda error in eligendi, magnam veritatis distinctio sunt nisi
+        tempora id voluptas esse inventore ratione quia eos molestiae saepe
+        necessitatibus tenetur. Sint, eaque? Provident eius blanditiis
+        laudantium qui, est velit quae? Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Soluta assumenda error in eligendi, magnam veritatis
+        distinctio sunt nisi tempora id voluptas esse inventore ratione quia eos
+        molestiae saepe necessitatibus tenetur. Sint, eaque? Provident eius
+        blanditiis laudantium qui, est velit quae?
+      </div>
+      <div>Lorem ipsum dolor sit.</div>
+      <div>Lorem ipsum dolor sit.</div>
+      <div>Lorem ipsum dolor sit.</div>
+      <div>Lorem ipsum dolor sit.</div>
+      <div>Lorem ipsum dolor sit.</div>
+    </div>
+  </body>
+</html>
