@@ -81,8 +81,9 @@ ul{
     background: #92bde7;
     color: #fff;
     outline: 0;
-    transition: background-color 1s ease-out, transform 1s ease-out, color 1s ease-out;
-    transform: scale(1.1)
+    transition: background-color 1s ease-out, transform 1s ease-out, color 1s ease-out, border-radius 1s ease-out;
+    transform: scale(1.1);
+    border-radius: 50px;
 }
 
 @media(min-width:700px){
