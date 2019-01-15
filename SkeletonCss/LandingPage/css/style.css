@@ -12,3 +12,37 @@
     max-width: 80%;
     margin: 3rem auto -12rem;
 }
+
+.section-one{
+    background: url(../images/bg.jpeg);
+    background-size: cover;
+    color: #fff;
+    padding-bottom: 5rem;
+}
+
+.section-one .fa{
+    font-size: 40px;
+    margin-bottom: 0.5rem;
+    color: #beebff;
+}
+
+.section-one h5{
+    margin-bottom: 0.3rem;
+}
+
+.section-three{
+    background: url(../images/bg.jpeg);
+    background-size: cover;
+    color: #fff;
+}
+
+.section-three .section-description{
+    margin-bottom: 4rem;
+}
+
+@media(min-width:750px){
+    .showcase-heading{
+        font-size: 3.0rem;
+        padding-top: 12rem;
+    }
+}
