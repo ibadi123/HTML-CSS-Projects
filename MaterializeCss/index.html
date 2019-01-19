@@ -71,10 +71,108 @@
 
         <div class="hide">Hidden For All</div>
         <div class="hide-on-small-only">Hidden for mobile devices</div>
+        <div class="hide-on-med-only">Hidden for mobile devices</div>
+        <div class="hide-on-large-only">Hidden for mobile devices</div>
+
+        <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veniam aliquid temporibus
+            similique ut
+            possimus et maiores corporis at suscipit?</p>
+
+
+        <!-- EFFECTS -->
+
+        <div class="red white-text hoverable">hoverable content</div>
+        <div class="blue white-text _pulse">hoverable content</div>
+
+        <!-- SHADOWS -->
+
+        <p class="z-depth-1 blue"> z-depth-1 </p>
+        <p class="z-depth-2 black"> z-depth-2 </p>
+        <p class="z-depth-3 red"> z-depth-3 </p>
+        <p class="z-depth-4 green"> z-depth-4 </p>
+        <p class="z-depth-5"> z-depth-5 </p>
+
+        <!-- FLOW TEXT -->
+
+        <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur vitae mollitia
+            consequuntur neque unde
+            fugit reiciendis harum distinctio numquam.</p>
+
+        <!-- IMAGES -->
+        <img src="auto-automobile-automotive-919073.jpg" alt="" class="responsive-img circle">
+
 
     </div>
 
-    
+    <!-- NAV BAR -->
+
+    <nav>
+        <div class="nav-wrapper blue">
+            <a href="#" class="brand-logo">Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+
+    <nav>
+        <div class="nav-wrapper red">
+            <a href="#" class="brand-logo right">Logo</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Dropdown MENU -->
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- LISTS OR COLLECTION -->
+
+        <ul class="collection">
+            <li class="collection-item">Item 1</li>
+            <li class="collection-item">Item 2</li>
+            <li class="collection-item">Item 3</li>
+            <li class="collection-item">Item 4</li>
+        </ul>
+
+        <div class="collection with-header">
+            <a href="" class="collection-item"><h4>Header</h4></a>
+            <a href="" class="collection-item">Link 1</a>
+            <a href="" class="collection-item">Link 2</a>
+            <a href="" class="collection-item">Link 3</a>
+        </div>
+
+    </div>
+
+
+
+
 
 
 
@@ -82,6 +180,9 @@
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(".dropdown-trigger").dropdown();
+    </script>
 </body>
 
 </html>
