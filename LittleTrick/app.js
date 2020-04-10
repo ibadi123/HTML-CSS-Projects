@@ -15,6 +15,8 @@ function xyz() {
   }, 2000);
 }
 
+
+
 const btn = document.querySelector('.btn');
 
 btn.addEventListener('click', xyz);
